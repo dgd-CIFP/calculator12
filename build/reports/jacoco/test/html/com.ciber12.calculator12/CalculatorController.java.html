@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 <span class="fc" id="L8">class CalculatorController {</span>
-@Autowired
-private Calculator calculator;
+	@Autowired
+	private Calculator calculator;
 
-@RequestMapping(&quot;/sum&quot;)
-String sum(@RequestParam(&quot;a&quot;) Integer a,
-@RequestParam(&quot;b&quot;) Integer b) {
-<span class="nc" id="L15">return String.valueOf(calculator.sum(a, b));</span>
-}
+	@RequestMapping(&quot;/sum&quot;)
+	String sum(@RequestParam(&quot;a&quot;) Integer a,
+			@RequestParam(&quot;b&quot;) Integer b) {
+<span class="nc" id="L15">		return String.valueOf(calculator.sum(a, b));</span>
+	}
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
